@@ -1,0 +1,29 @@
+{
+  "name": "lendsqr",
+  "version": "1.0.0",
+  "description": "lendsqr assesment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tulbadex",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "bookshelf": "^1.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-session": "^1.17.3",
+    "helmet": "^6.0.1",
+    "knex": "^2.4.0",
+    "moment": "^2.29.4",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "response-time": "^2.3.2",
+    "uniqid": "^5.4.0",
+    "uuid": "^9.0.0"
+  }
+}
