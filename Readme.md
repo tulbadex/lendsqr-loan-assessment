@@ -21,7 +21,7 @@
     - npm i --legacy-peer-deps
 
 # ERD Diagram
-![ERD Diagram](/ERD/ERD-Screenshot 2023-01-11 131200.png)
+<img src="/ERD/ERD-Screenshot 2023-01-11 131200.png" alt="Lendsqr ERD">
 
 # Background
 
