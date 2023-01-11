@@ -7,10 +7,17 @@ const uniqid = require('uniqid');
 
 async function createAccount(req, res) {
     const token = uuid.v4();
-    await checkEmailExists(req, res);
-    await checkUsernameExists(req, res);
+    // await checkEmailExists(req, res);
+    const check_email = await User.checkEmail(req.body.email)
+    if(check_email) return res.json(422, {success: false, message:"Email already exists"})
+
+    const check_username = await User.checkUsername(req.body.username)
+    if(check_username) return res.json(422, {success: false, message:"Username already exists"})
+    
+    // await checkUsernameExists(req, res);
 
     const password = await bcrypt.hash(req.body.password, 10)
+    // const result = await bcrypt.compare(plaintextPassword, hash);
     const data = {
         firstname: req.body.firstname,
         lastname: req.body.lastname,
@@ -35,7 +42,7 @@ function checkEmailExists(req, res, next) {
     checkEmail.then(c=> {
         if(c) return res.json(422, {success: false, error: 'Email already exists'})
     }).catch(err => {
-        console.error(err)
+        console.log(err)
     });
 }
 
@@ -44,7 +51,7 @@ function checkUsernameExists(req, res, next) {
     checkUsername.then(c=> {
         if(c) return res.json(422, {success: false, error: 'Username already exists'})
     }).catch(err => {
-        console.error(err)
+        console.log(err)
     });
 }
 

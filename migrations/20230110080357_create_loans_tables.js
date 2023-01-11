@@ -7,9 +7,9 @@ exports.up = function(knex) {
         .createTable('loans', (table) => {
             table.increments('id').primary();
             table.integer('user_id').unsigned().notNullable();
-            table.foreign('user_id').references('users.id');
-            table.integer('amount').notNullable().defaultTo(0);
-            table.integer('payment').notNullable().defaultTo(0);
+            table.foreign('user_id').references('users.id').onDelete('CASCADE');
+            table.decimal('amount').notNullable().defaultTo(0);
+            table.decimal('payment').notNullable().defaultTo(0);
             table.timestamps();
         })
 };
@@ -19,5 +19,6 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 exports.down = function(knex) {
-  
+    return knex.schema
+        .dropTable('loans');
 };

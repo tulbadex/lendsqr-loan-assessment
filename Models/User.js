@@ -1,7 +1,6 @@
 const bookshelf = require('../Connection/Connection');
 const  { Wallet } = require('./Wallet');
 const  { Transaction } = require('./Transaction');
-const moment = require('moment');
 
 class User extends bookshelf.Model {
     get tableName() { return 'users' }
@@ -27,6 +26,14 @@ class User extends bookshelf.Model {
 
     static async recipeint(email) {
         return this.forge().where({email: email}).fetch({require: false});
+    }
+
+    static async checkEmail(email) {
+        return this.forge().where({email: email}).fetch({require: false});
+    }
+
+    static async checkUsername(username) {
+        return this.forge().where({username: username}).fetch({require: false});
     }
 
     // 7805746d-e4db-415e-ba71-ec32e6d3b30b

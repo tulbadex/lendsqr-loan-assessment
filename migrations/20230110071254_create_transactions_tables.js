@@ -7,11 +7,11 @@ exports.up = function(knex) {
         .createTable('transactions', (table) => {
             table.increments('id').primary();
             table.integer('sender_id').unsigned().notNullable();
-            table.foreign('sender_id').references('users.id');
+            table.foreign('sender_id').references('users.id').onDelete('CASCADE');
             table.integer('recipient_id').unsigned().nullable();
-            table.foreign('recipient_id').references('users.id');
-            table.integer('amount').notNullable();
-            table.string('type').nullable();
+            table.foreign('recipient_id').references('users.id').onDelete('CASCADE');
+            table.decimal('amount').notNullable();
+            table.string('type', 20).nullable();
             table.timestamps();
         });
 };
