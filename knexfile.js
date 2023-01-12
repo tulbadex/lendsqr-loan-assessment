@@ -1,3 +1,4 @@
+require('dotenv').config();
 // Update with your config settings.
 
 /**
@@ -9,9 +10,9 @@ module.exports = {
     client: 'mysql',
     connection: {
       // filename: './dev.sqlite3'
-      database: 'lendsqr',
-      user:     'root',
-      password: ''
+      database: process.env.DATABASE_NAME,
+      user:     process.env.DATABASE_USER,
+      password: process.env.DATABASE_PASSWORD
     },
     pool: {
       min: 2,
@@ -25,9 +26,9 @@ module.exports = {
   staging: {
     client: 'postgresql',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      database: process.env.DATABASE_NAME,
+      user:     process.env.DATABASE_USER,
+      password: process.env.DATABASE_PASSWORD
     },
     pool: {
       min: 2,
@@ -39,11 +40,11 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client: 'mysql',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      database: process.env.DATABASE_NAME,
+      user:     process.env.DATABASE_USER,
+      password: process.env.DATABASE_PASSWORD
     },
     pool: {
       min: 2,
