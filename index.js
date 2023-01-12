@@ -11,6 +11,7 @@ const morgan = require('morgan');
 
 const router = require('./route')
 
+
 // adding Helmet to enhance your Rest API's security
 app.use(helmet());
 
@@ -38,6 +39,14 @@ app.use(morgan('combined'));
 
 app.use('/api', router)
 
+app.use('/', router.get('', function(req, res) {
+    res.send('<h1>Welcome To Home</h1>')
+}));
+
+/* const home = router.get('', function(req, res) {
+    res.send('<h1>Welcome To Home</h1>')
+})
+app.use('/', home) */
 
 app.listen(3000, function () {
     console.log('Listening to Port 3000');
