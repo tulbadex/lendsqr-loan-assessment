@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 
@@ -48,7 +49,7 @@ app.use('/', router.get('', function(req, res) {
 })
 app.use('/', home) */
 
-app.listen(3000, function () {
+app.listen(process.env.PORT, function () {
     console.log('Listening to Port 3000');
 });
 
