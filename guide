@@ -1,0 +1,12 @@
+# Heroku Guide
+
+    # To check environmental variables
+        heroku run printenv -a ibrahim-lendsqr-be-test
+
+    # To run command
+        heroku run -a ibrahim-lendsqr-be-test npm test
+
+    # To run heroku scaling command
+        heroku ps:scale web=1 -a ibrahim-lendsqr-be-test
+    
+    
