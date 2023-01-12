@@ -92,6 +92,15 @@
     </tbody>
 </table>
 
+## Postman collection url
+    [Postman Collection](https://www.postman.com/tulbadex/workspace/lensqr/collection/5390317-c148808c-989a-4397-9b1c-c3a72a7b3d1d?action=share&creator=5390317)
+
+## Assessment Url
+    [Test url](https://docs.google.com/document/d/e/2PACX-1vRjhUo8U2gnOM-zZ3sfZxMZfNWtvWl6TxX7NKEUhDz83d--4b2llsT_vlEpFC5-ZSeQ_sXnBEf8V49B/pub)
+
+## APi base url
+    [Base url](https://ibrahim-lendsqr-be-test.herokuapp.com/)
+
 # LENSQR ASSESSMENT QUESTION
 ## Background
 
