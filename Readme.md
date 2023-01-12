@@ -16,14 +16,16 @@
 
 # Getting Started
     1.  Clone the repository
-            `` git clone https://github.com/tulbadex/lendsqr-loan-assessment.git ``
+            ```git clone https://github.com/tulbadex/lendsqr-loan-assessment.git```
     2.  Install Dependencies
-            `` npm install ``
-            `` npm install knex -g ``
+            ```
+                npm install
+                npm install knex -g
+            ```
     3.  Start the development server
-            `` npm start ``
+            ```npm start```
     4.  Run test
-            `` npm test ``
+            ```npm test```
 
 # ERD Diagram
     The following ERD diagram illustrates the schema of the database used in the project
