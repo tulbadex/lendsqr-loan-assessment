@@ -1,10 +1,6 @@
 const request = require('supertest')
 const app = require('../index')
 const bookshelf = require('../Connection/Connection');
-// const knex = require('../knexfile.database');
-const { User } = require('../Models/User');
-const { Transaction } = require('../Models/Transaction');
-const { Wallet } = require('../Models/Wallet');
 
 describe('app', () => {
     beforeAll(async () => {
