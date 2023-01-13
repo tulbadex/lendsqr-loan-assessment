@@ -1,30 +1,30 @@
 # Demo Client Wallet App
-    A mobile lending application that requires wallet functionality, where borrowers can receive loans
-    and make repayments.
+A mobile lending application that requires wallet functionality, where borrowers can receive loans
+and make repayments.
 
 # Features
-    - A user can create an account
-    - A user can fund their account
-    - A user can transfer funds to another user's account
-    - A user can withdraw funds from from their account
+- A user can create an account
+- A user can fund their account
+- A user can transfer funds to another user's account
+- A user can withdraw funds from from their account
 
 # Tech Stack
-    - NodeJS (LTS version)
-    - KnexJS ORM
-    - MySQL Database
-    - TypeScript
+- NodeJS (LTS version)
+- KnexJS ORM
+- MySQL Database
+- TypeScript
 
 # Getting Started
-    1.  Clone the repository
-            git clone https://github.com/tulbadex/lendsqr-loan-assessment.git
-    2.  Install Dependencies
-            npm install
-            npm install knex -g
+1.  Clone the repository
+        ```git clone https://github.com/tulbadex/lendsqr-loan-assessment.git```
+2.  Install Dependencies
+        ```npm install```
+        ```npm install knex -g```
 
-    3.  Start the development server
-            npm start
-    4.  Run test
-            npm test
+3.  Start the development server
+        `npm start`
+4.  Run test
+        `npm test`
 
 # ERD Diagram
     The following ERD diagram illustrates the schema of the database used in the project
