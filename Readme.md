@@ -138,7 +138,7 @@ Ensure to write unit tests for the project
 - Application of best practice in design and architecture
 - Unit testing (positive and negative test scenarios)
 - Commit history and messages on Github
-- Quality of README documentation (Please include your E-R Diagram in the README. you can use this tool to design your E-R Diagram (https://app.dbdesigner.net/) )
+- Quality of README documentation (Please include your E-R Diagram in the README. you can use this tool to design your E-R Diagram ![Db Designer](https://app.dbdesigner.net/) )
 - Folders and files organization
 - Variable and function naming, conventions and consistency
 - Semantic use of paths and resource naming
