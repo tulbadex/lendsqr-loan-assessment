@@ -20,10 +20,18 @@ and make repayments.
 2.  Install Dependencies
         ```npm install```
         ```npm install knex -g```
+3.  Add Evirionmentals variables to .env
+    DATABASE_HOST = 
+    DATABASE_PORT = 3306
+    DATABASE_USER = 
+    DATABASE_PASSWORD = 
+    DATABASE_NAME = 
+    CLEARDB_DATABASE_URL = 
+    PORT = 3000
 
-3.  Start the development server
+4.  Start the development server
         `npm start`
-4.  Run test
+5.  Run test
         `npm test`
 
 # ERD Diagram
